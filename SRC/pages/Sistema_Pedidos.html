@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SRC/global/reset.css">
+    <link rel="stylesheet" href="/SRC/style/sistema_pedido/main.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <header class="cabecalho-principal">
+        <nav class="menu-navegacao">
+            <h1 class="titulo-pagina">Pedidos do Cartório</h1>
+            <button class="botao-adicionar-pedido">Adicionar Novo Pedido</button>
+            <dialog class="modal">
+                <div class="modal-conteudo">
+                    <form action="" method="dialog" class="form-pedido">
+                        <div class="form-group">
+                            <label for="cliente" class="form-label">Nome do cliente</label>
+                            <input type="text" name="cliente" id="cliente" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pedido" class="form-label">Nº do pedido</label>
+                            <input type="text" name="pedido" id="pedido" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="valor" class="form-label">Valor</label>
+                            <input type="number" name="valor" id="valor" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data" class="form-label">Data</label>
+                            <input type="date" name="data" id="data" class="form-input">
+                        </div>
+
+                        <button type="submit" class="btn" id="btn_cadastro">Cadastrar</button>
+                        <button type="button" class="btn btn-fechar">Fechar</button>
+                    </form>
+                </div>
+            </dialog>
+
+        </nav>
+    </header>
+    <main>
+        <section class="container-principal">
+            <input type="search" name="busca-pedido" id="busca-pedido" class="campo-busca"
+                placeholder="Buscar por cliente ou pedido..." autocomplete="on">
+
+            <table class="tabela-pedidos" id="tabela">
+                <thead>
+                    <tr class="cabecalho-tabela">
+                        <th>Cliente</th>
+                        <th>Nº do pedido</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <form action="" method="post" class="form-status">
+                            <select name="status" id="status" class="form-select">
+                                <option value="">Selecione o status</option>
+                                <option value="novo">Novo</option>
+                                <option value="andamento">Em andamento</option>
+                                <option value="finalizado">Finalizado</option>
+                            </select>
+                        </form>
+                    </td>
+                </tr>
+                <tr class="linha-dados">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <form action="" method="post" class="form-status">
+                            <select name="status" id="status" class="form-select">
+                                <option value="">Selecione o status</option>
+                                <option value="novo">Novo</option>
+                                <option value="andamento">Em andamento</option>
+                                <option value="finalizado">Finalizado</option>
+                            </select>
+                        </form>
+                    </td>
+                </tr>
+                <tr class="linha-dados">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <form action="" method="post" class="form-status">
+                            <select name="status" id="status" class="form-select">
+                                <option value="">Selecione o status</option>
+                                <option value="novo">Novo</option>
+                                <option value="andamento">Em andamento</option>
+                                <option value="finalizado">Finalizado</option>
+                            </select>
+                        </form>
+                    </td>
+                </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/SRC/JS/main.js"></script>
+    <script src="/SRC/JS/form_cadastro.js"></script>
+</body>
+
+</html>
