@@ -53,35 +53,40 @@
     margin: auto;
     border: 1px solid #000;
     border-collapse: collapse;
+    table-layout: fixed;
+    /* Força a tabela a deixar o tamanho por igual  */
 }
 
 .cabecalho-tabela {
     border: 1px solid #000;
+}
 
+.marcador{
+    margin-right: 1rem;
 }
 
 .linha-dados {
     border: 1px solid #000;
 }
 
-.tabela-pedidos tbody tr:nth-child(odd){
+.tabela-pedidos tbody tr:nth-child(odd) {
     background-color: #ccc;
 }
 
-.form-status{
+.form-status {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.4rem;
 }
 
-.form-select{
+.form-select {
     text-align: center;
     border-radius: 1rem;
     outline: none;
 }
 
-.modal{
+.modal {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -90,24 +95,24 @@
     border: none;
 }
 
-.modal::backdrop{
-   background-color: rgba(0, 0, 0, .6);
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, .6);
 }
 
-.form-pedido{
+.form-pedido {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     gap: 1rem;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     gap: .3rem;
 }
 
-.btn{
+.btn {
     margin: auto;
     width: fit-content;
     padding: 0.2rem 2rem;
@@ -118,8 +123,12 @@
     font-size: 1rem;
 }
 
-.btn:hover:active{
+.btn:hover:active {
     background-color: rgba(0, 0, 0, .5);
     transform: scale(0.95);
 }
 
+
+.center{
+    text-align: center;
+}

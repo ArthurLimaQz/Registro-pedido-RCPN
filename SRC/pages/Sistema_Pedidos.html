@@ -37,7 +37,7 @@
                             <input type="date" name="data" id="data" class="form-input">
                         </div>
 
-                        <button type="submit" class="btn" id="btn_cadastro">Cadastrar</button>
+                        <button type="submit" class="btn" id="btn_cadastro" onclick="produto.salvar()">Salvar</button>
                         <button type="button" class="btn btn-fechar">Fechar</button>
                     </form>
                 </div>
@@ -49,67 +49,21 @@
         <section class="container-principal">
             <input type="search" name="busca-pedido" id="busca-pedido" class="campo-busca"
                 placeholder="Buscar por cliente ou pedido..." autocomplete="on">
-
+            <button type="submit">Deletar</button>
             <table class="tabela-pedidos" id="tabela">
                 <thead>
                     <tr class="cabecalho-tabela">
+                        <th class="center">Id</th>
                         <th>Cliente</th>
                         <th>Nº do pedido</th>
                         <th>Valor</th>
                         <th>Data</th>
+                        <th>Ações</th>
                         <th>Status</th>
+
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>
-                        <form action="" method="post" class="form-status">
-                            <select name="status" id="status" class="form-select">
-                                <option value="">Selecione o status</option>
-                                <option value="novo">Novo</option>
-                                <option value="andamento">Em andamento</option>
-                                <option value="finalizado">Finalizado</option>
-                            </select>
-                        </form>
-                    </td>
-                </tr>
-                <tr class="linha-dados">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>
-                        <form action="" method="post" class="form-status">
-                            <select name="status" id="status" class="form-select">
-                                <option value="">Selecione o status</option>
-                                <option value="novo">Novo</option>
-                                <option value="andamento">Em andamento</option>
-                                <option value="finalizado">Finalizado</option>
-                            </select>
-                        </form>
-                    </td>
-                </tr>
-                <tr class="linha-dados">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>
-                        <form action="" method="post" class="form-status">
-                            <select name="status" id="status" class="form-select">
-                                <option value="">Selecione o status</option>
-                                <option value="novo">Novo</option>
-                                <option value="andamento">Em andamento</option>
-                                <option value="finalizado">Finalizado</option>
-                            </select>
-                        </form>
-                    </td>
-                </tr> -->
-                </tbody>
+                <tbody id="tbody"></tbody>
             </table>
         </section>
     </main>
